@@ -76,7 +76,7 @@ def secure_page():
 def logout():
     if current_user.is_authenticated:
         
-        flash('You have been logged out', 'warning')
+        flash('You are logged out', 'warning')
         logout_user()
         return redirect(url_for("home"))
     
